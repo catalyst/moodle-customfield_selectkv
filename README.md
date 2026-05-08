@@ -1,16 +1,16 @@
 # customfield_selectkv
 
-A Moodle custom field plugin that provides a dropdown (select) menu where options are defined as **key;value** pairs.
+A Moodle custom field plugin that provides a autocomplete menu where options are defined as key-value pairs.
 
 ## How it works
 
-- The **key** is stored in the database (`charvalue` column).
-- The **value** (label) is shown to the user in the dropdown.
+- The key is stored in the database (`charvalue` column).
+- The value (label) is shown to the user in the dropdown.
 - This decouples the stored identifier from the display text, so labels can be changed without breaking existing data.
 
 ## Configuration
 
-When adding a field, enter one `key;value` pair per line in the **Menu options** field:
+When adding a field, enter one `key;value` pair per line in the Menu options field:
 
 ```
 red;Red Color
@@ -18,7 +18,9 @@ blue;Blue Color
 green;Green Color
 ```
 
-Optionally set a **Default value** using a key (e.g. `blue`).
+Optionally set a Default value using a key (e.g. `blue`).
+
+The field also allows storing multiple selected options.
 
 ## Version support
 This plugin has only been tested on Moodle 4.5.
